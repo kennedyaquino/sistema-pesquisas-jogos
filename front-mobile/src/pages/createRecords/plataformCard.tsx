@@ -21,7 +21,7 @@ const PlatformCard =({ platform, onPlatformChange, icon, activePlatform }: Props
        <RectButton 
         style={[styles.platformCard, { backgroundColor }]}
         onPress={() => onPlatformChange(platform)}
-       >
+    >
         <Icon name={icon} size={60} color={textColor} />
         <Text style={[styles.platformCardText, {color:textColor}]} >
             {platform === 'PLAYSTATION' ? 'PS' : platform}
