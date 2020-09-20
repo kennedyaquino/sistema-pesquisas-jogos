@@ -8,7 +8,7 @@ const Header = () => {
     const navigation = useNavigation();
 
     const handleOnPress = () => {
-      navigation.navigate('home');
+      navigation.navigate('home');  
     }
 
     return(
