@@ -72,6 +72,7 @@ export const pieOptions = {
         labels: {
           maxWidth: 360,
           style: {
+            align: 'right',
             colors: "#00D4FF",
             fontSize: "18px",
             fontFamily: "Play, sans-serif",

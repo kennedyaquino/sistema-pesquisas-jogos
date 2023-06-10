@@ -1,6 +1,6 @@
 .chart-container {
     display: flex;
-  }
+}
   
   .top-related {
     background-color: var(--color-dimgray);
@@ -17,7 +17,10 @@
   
   .games-container {
     display: flex;
-    justify-content: center;
+  }
+
+  .games-container-mobile {
+    display: none;
   }
   
   .games-list {
@@ -70,3 +73,105 @@
     background-color: var(--color-dimgray);
     border-radius: 10px;
   }
+
+  @media (max-width: 768px) {
+    .chart-container {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      
+    }
+
+    .games-container-mobile {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      
+    }
+
+    .games-container {
+      display: none;
+    }
+
+    .games-container-mobile p {
+      color: #00D4FF;
+    }
+  
+    .container-barra {
+      width: 100%;
+      height: 30px;
+      background-color: transparent;
+      border-radius: 10px;
+    }
+  
+    .barra {
+      background-color: #ED7947;
+      height: 30px;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .charts {
+      color: #FFF;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      
+      
+    }
+
+    .platform-chart {
+      height: 373px;
+      background-color: var(--color-dimgray);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    .gender-chart {
+      height: 373px;
+      background-color: var(--color-dimgray);
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      width: 100%;
+    }
+
+    .top-related {
+      background-color: var(--color-dimgray);
+      padding: 0;
+      border-radius: 10px;
+      padding-bottom: 20px;
+      display: grid;
+      width: 100%;
+    }
+
+    .top-related-title {
+      text-align: center;
+      font-size: 24px;
+    }
+
+    .page-container {
+      padding: 0;
+      margin-top: 20px;
+      
+    }
+
+  }
+
+
+  
+
+  

@@ -21,7 +21,9 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = 'https://sds1-kennedy.herokuapp.com';
+//const BASE_URL = 'https://sds1-kennedy.herokuapp.com';
+
+const BASE_URL = 'http://localhost:8080';
 
 const Charts = () => {
 
@@ -54,6 +56,18 @@ const Charts = () => {
                     <h1 className="top-related-title">
                         Jogos mais votados
                     </h1>
+                    <div className="games-container-mobile">
+                        {barChartData.map(dt => (
+                            <>
+                                <p>{dt.x}</p>
+                                <div className='container-barra'>
+                                    <div className='barra' style={{ width: dt.y + 60 + "%" }} > {dt.y} </div>
+                                </div>
+                                
+                                
+                            </>
+                        ))}
+                    </div>
                     <div className="games-container">
                         <Chart 
                         options={barOptions}
@@ -63,6 +77,7 @@ const Charts = () => {
                         series={[{data: barChartData}]}
                         />
                     </div>
+                    
                 </div>
                 <div className="charts">
                     <div className="platform-chart">
@@ -73,7 +88,7 @@ const Charts = () => {
                             }}
                             type="donut"
                             series={platformData?.series}
-                            width="350"
+                            width="250"
                         />
                     </div>
                     <div className="gender-chart">
@@ -84,7 +99,7 @@ const Charts = () => {
                             }}
                             type="donut"
                             series={genderData?.series}
-                            width="350"
+                            width="250"
                         />
                     </div>
                 </div>
