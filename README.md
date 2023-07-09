@@ -32,6 +32,9 @@ git clone https://github.com/kennedyaquino/sds1.git
 ```
 
 Altere o profile para test no arquivo application.properties na pasta resource:
+```
+cd backend/src/main/resources/application.properties
+```
 
 ```
 spring.profiles.active=test
