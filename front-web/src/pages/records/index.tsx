@@ -6,10 +6,7 @@ import { formartDate } from './helpers';
 import Pagination from './pagination';
 import Filters from '../../components/Filters'
 
-//const BASE_URL = 'https://sds1-kennedy.herokuapp.com';
-
-
-const BASE_URL = process.env.REACT_APP_URL_API;
+const BASE_URL = "http://localhost:8080";
 
 const Records = () => {
 

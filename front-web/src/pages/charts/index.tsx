@@ -21,7 +21,7 @@ const initialPieData = {
     series: []
 }
 
-const BASE_URL = process.env.REACT_APP_URL_API;
+const BASE_URL = "http://localhost:8080";
 
 const Charts = () => {
 
