@@ -8,73 +8,44 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-```
-Java
-```
-```
-Maven
-```
-```
-NodeJs
-```
-```
-NPM
-```
-```
-Expo
-```
+- Java
+- Maven
+- NodeJs
+- Npm
+- Expo
 
 ### 🔧 Instalação
 
 Clone este repositório
+
 ```
 git clone https://github.com/kennedyaquino/sds1.git
 ```
 
-Altere o profile para test no arquivo application.properties na pasta resource:
-```
-cd backend/src/main/resources/application.properties
-```
-
-```
-spring.profiles.active=test
-```
-
-Execute o servidor no terminal pela pasta backend
-
+Execute o servidor no terminal de comando pela pasta ```backend```
 ```
 mvn spring-boot:run
 ```
-Ou pela IDE de sua preferência
 
-Instale as dependências web
-```
-cd/front-web
-```
+Após o servidor spring estiver executando, abra um novo terminal e navegue até a pasta ```front-web``` e instale as dependências
 ```
 npm install
 ```
 Execute o servidor web
-
 ```
 npm start
 ```
 
-Instale as dependências mobile
-```
-cd/front-mobile
-```
+Após o servidor web estiver executando, abra um novo terminal e navegue até a pasta ```front-mobile``` e instale as dependências
 ```
 npm install
 ```
 Execute o servidor mobile
-
 ```
 npm start
 ```
-Será gerado um qrCode no terminal onde pode apontar a camera de seu smartphone com aplicativo expo,
+Será gerado um qrCode no terminal onde pode sincronizar com o aplicativo expo de seu smartphone 
 ou de sua preferência executar no emulador.
-
 
 ## 🛠️ Construído com
 
