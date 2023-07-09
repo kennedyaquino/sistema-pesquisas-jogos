@@ -88,4 +88,4 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/kennedyaquino/sds1/LICENSE) para detalhes.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](https://github.com/kennedyaquino/sds1/blob/master/LICENSE) para detalhes.
