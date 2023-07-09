@@ -40,9 +40,8 @@ cd backend/src/main/resources/application.properties
 spring.profiles.active=test
 ```
 
-Execute o servidor
+Execute o servidor no terminal pela pasta backend
 
-Terminal na pasta raiz:
 ```
 mvn spring-boot:run
 ```
